@@ -27,9 +27,10 @@ From Kaggle, we can get all the ski resort names, use these names as Twitter nam
 
 Some ski resort name may not have Twitter name, so when we run the code, we need ignore error and continue running.
  
-
+![2](https://user-images.githubusercontent.com/47193601/56831327-becadf80-6836-11e9-9fc3-bc53683a2428.png)
 •	Resort_twitter(table in mysql)
 
+![3](https://user-images.githubusercontent.com/47193601/56831347-cc806500-6836-11e9-91fc-b0a0cc2694d5.png)
  
 
 3. Consumer information from Instagram
@@ -37,9 +38,10 @@ We use ski resort name got from Kaggle as hashtag and we use instaloader to get 
 
 Some ski resort name may not have hashtag, when we run the code, we need ignore error and continue running.  Some ski resort as hashtags may not have posts during 24 hours, so we will get empty list in our table, we need drop it and finally create a whole table.
  
+![4](https://user-images.githubusercontent.com/47193601/56831377-e752d980-6836-11e9-9d74-831fec9f3d4c.png)
 
 •	Inshashtag
- 
+ ![5](https://user-images.githubusercontent.com/47193601/56831388-e9b53380-6836-11e9-9a3f-ecd27db031c6.png)
 
 4. Ski resort information from google map
 When we get ski resort name, we need input these names to google map, but these ski resort name may not the accurate name in google map. Therefore, the first step, we need add ski resort after every ski resort name. Then we use these names to get longitude and latitude.
