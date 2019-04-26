@@ -1,7 +1,7 @@
 # INFO 6210 Ski Resort Recommend
 
-JIAYUE XU /n
-LIN SHI/n
+JIAYUE XU 
+LIN SHI 
 RUOLAN LIAO
 
 Abstract
