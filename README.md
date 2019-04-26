@@ -185,10 +185,10 @@ We create a database and python as the bottom of the website we connected to the
 
 However, the most difficult thing is that we don’t know how to use Django to create a website. There are have not enough time to learn by ourselves this library. So, it’s clearly what we need to do in future. We need use Django to create a website such as search engine and so on. 
 
-X. Citation
+X. Citation (90% By Ourself , 10% By The Citation)
 1. Kaggle: https://www.kaggle.com/beaubellamy/ski-resort
 2. Instagram API: https://instaloader.github.io/index.html
-3.Twitter API: https://developer.twitter.com/en/docs.html
+3. Twitter API: https://developer.twitter.com/en/docs.html
 4. Google map API: https://developers.google.com/maps/documentation/maps-static/intro
 5. Weather API: https://rapidapi.com/darkskyapis/api/dark-sky?utm_source=google&utm_medium=cpc&campaign=1755331082&keyword=dark%20sky%20api&gclid=CjwKCAjwtYXmBRAOEiwAYsyl3E0gIvlOFxfTBLunnM7PgWco4SrEjF8P_3YfVcp60wT77yQoh_zYWxoCRHgQAvD_BwE
 
