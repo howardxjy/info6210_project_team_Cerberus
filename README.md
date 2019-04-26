@@ -71,16 +71,7 @@ However, in order to do normalization, we need divide all information to 8 table
 •	windspeed
  
 
-
-
-III. ER Diagram
-
- 
-
-IV. Code with Documentation
-
-
-V. News and Trend
+III. News and Trend
 We just extract those consumers information from Instagram who post posts during 24 hours in 500 hashtags, everyday we will get total about 1000 posts to MySQL and we have get 5000 posts till today.
 
 And same situation, we extract weather information from Dark sky website during 7 days. Every 7 days, we will update the information in database.
@@ -89,7 +80,7 @@ And same situation, we extract weather information from Dark sky website during 
  
  
 
-VI. Use case to answer those question
+IV. Use case to answer those question
 •	What are people saying about me(somebody)?
 Usecase_1: Find all the posts with a special hashtag or context?
  
@@ -117,7 +108,7 @@ Usecase_8: Add the most likely hashtag to “Abenaki” into my post caption?
 Usercase_9: Find the consumer who has the most Instagram posts likes for one particular ski resort
  
 
-VII. Fuzzy search
+V. Fuzzy search
 1. Synonyms 
 When we extract users’ posts from Instagram, we will also get many synonyms hashtag cause they are included in those posts. Therefore, we use fuzzywuzzy library to classify those hashtags and select the most matching hashtag as the synonymous hashtags
  
@@ -131,19 +122,19 @@ When users post posts, they maybe have many hashtags, those irrelevant hashtags 
  
 
 
-VIII. Results
+VI. Results
 We create a database about all ski resort information and then we write code in python to connect our database. Beside we write function to help users to find ideal ski resort. For example, if customers input location they want to go and the ticket price they can afford, they will find all information from our database to recommend some ski resort and customers can choice one of they like.  
 Case1 price and location
  
 Case2: state and altitude
  
 
-IX. Conclusion and Difficulties
+VII. Conclusion and Difficulties
 We create a database and python as the bottom of the website we connected to the database. Then we write switch case to call database. Therefore, when user search information, we will call function to extract the information they want.
 
 However, the most difficult thing is that we don’t know how to use Django to create a website. There are have not enough time to learn by ourselves this library. So, it’s clearly what we need to do in future. We need use Django to create a website such as search engine and so on. 
 
-X. Citation
+VIII. Citation
 1. Kaggle: https://www.kaggle.com/beaubellamy/ski-resort
 2. Instagram API: https://instaloader.github.io/index.html
 3.Twitter API: https://developer.twitter.com/en/docs.html
