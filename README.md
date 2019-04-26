@@ -20,7 +20,7 @@ II. Data Resource
 1. Ski resort information from Kaggle
 We get ski resort information from Kaggle, but it includes other countries’ ski resort information excepted to the America. So we need classify ski resorts those in the USA.
 •	ski_resort_usa
- 
+ ![1](https://user-images.githubusercontent.com/46548277/56830387-351a1280-6834-11e9-9407-a5aa17a65b7b.jpg)
  
 2. Ski resort information from Twitter
 From Kaggle, we can get all the ski resort names, use these names as Twitter names to search location of ski resorts, followers and so on. 
