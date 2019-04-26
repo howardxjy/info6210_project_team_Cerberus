@@ -1,5 +1,4 @@
-# info6210_project_team_Cerberus
-INFO 6210 Ski Resort Recommend
+# INFO 6210 Ski Resort Recommend
 
 JIAYUE XU
 LIN SHI
