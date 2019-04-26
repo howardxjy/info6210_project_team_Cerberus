@@ -47,96 +47,145 @@ Some ski resort name may not have hashtag, when we run the code, we need ignore 
 When we get ski resort name, we need input these names to google map, but these ski resort name may not the accurate name in google map. Therefore, the first step, we need add ski resort after every ski resort name. Then we use these names to get longitude and latitude.
 
 The result of format we get from google map API is string, we need exchange it to list.
- 
+![6](https://user-images.githubusercontent.com/47193601/56831391-ec178d80-6836-11e9-9549-652bb585edbe.png) 
 •	resorts_googleinfo
- 
+![7](https://user-images.githubusercontent.com/47193601/56831393-ede15100-6836-11e9-8ad5-021f37c1591d.jpg) 
 
 
 5. Ski resort information from Dark Sky website
 When we get all the longitude and latitude from Google map API, we put it to the Dark Sky website. Then we will get all information like cloud cover, humidity, pressure and so on. 
 
 However, in order to do normalization, we need divide all information to 8 tables.
- 
+![8](https://user-images.githubusercontent.com/47193601/56831401-f5a0f580-6836-11e9-898c-2fc8700d4d8f.png) 
 
 •	cloudcover
- 
-•	humidity
- 
-•	pressure
- 
-•	temperature_max
- 
-•	temperature_min
- 
-•	visibility
- 
-•	windspeed
- 
 
-III. News and Trend
+![9](https://user-images.githubusercontent.com/47193601/56831404-f76ab900-6836-11e9-893d-bea424e64f7e.jpg)
+
+•	humidity
+
+![10](https://user-images.githubusercontent.com/47193601/56831416-018cb780-6837-11e9-9536-1dbcdf3adaca.jpg) 
+
+•	pressure
+
+![11](https://user-images.githubusercontent.com/47193601/56832811-f471c780-683a-11e9-89e3-715f7ae88916.jpg) 
+
+•	temperature_max
+
+![12](https://user-images.githubusercontent.com/47193601/56832815-f76cb800-683a-11e9-81d4-1c1cb8c440a9.jpg) 
+
+•	temperature_min
+
+![13](https://user-images.githubusercontent.com/47193601/56832817-f9367b80-683a-11e9-9169-674d33c462d1.jpg) 
+
+•	visibility
+
+![14](https://user-images.githubusercontent.com/47193601/56832819-fb98d580-683a-11e9-99be-e70043c8b214.jpg) 
+
+•	windspeed
+
+ ![15](https://user-images.githubusercontent.com/47193601/56832824-fd629900-683a-11e9-8b3e-7fdd239f7418.jpg)
+
+III. ER Diagram
+
+![16](https://user-images.githubusercontent.com/47193601/56832832-ff2c5c80-683a-11e9-87db-cb7e8aa6deb4.png)
+
+
+IV. Code with Documentation
+
+https://github.com/howardxjy/info6210_project_team_Cerberus 
+
+
+V. News and Trend
 We just extract those consumers information from Instagram who post posts during 24 hours in 500 hashtags, everyday we will get total about 1000 posts to MySQL and we have get 5000 posts till today.
 
 And same situation, we extract weather information from Dark sky website during 7 days. Every 7 days, we will update the information in database.
 
- 
- 
- 
+![17](https://user-images.githubusercontent.com/47193601/56833939-115bca00-683e-11e9-86f1-d07e68ced0ac.jpg)
 
-IV. Use case to answer those question
+![18](https://user-images.githubusercontent.com/47193601/56833946-1456ba80-683e-11e9-93cd-035258737db4.jpg)
+
+![19](https://user-images.githubusercontent.com/47193601/56833952-16207e00-683e-11e9-91d5-0611b6f5e965.jpg)
+
+
+VI. Use case to answer those question
 •	What are people saying about me(somebody)?
 Usecase_1: Find all the posts with a special hashtag or context?
+
+![20](https://user-images.githubusercontent.com/47193601/56832873-15d2b380-683b-11e9-8047-91123083dcde.jpg)
  
 •	How viral are my posts?
 Usecase_2: Find the ins user with the most posts’ likes?
 •	Who should I be following?
 Usecase_3: Find someone all posts who have the most posts’ likes.
- 
+
+![21](https://user-images.githubusercontent.com/47193601/56832875-18350d80-683b-11e9-82b1-c3a4ae6a84d7.jpg)
+
 •	What posts are likely to be interesting to me?
 Usecase_4: Find all the posts with a particular hashtag and many comments?
- 
+
+![22](https://user-images.githubusercontent.com/47193601/56832901-271bc000-683b-11e9-9fcf-315f328dfa38.jpg) 
+
 •	What post are like mine?
 Usecase_5: Find all the posts give a positive comment to the ski resort?
-                   
+
+![23](https://user-images.githubusercontent.com/47193601/56832907-28e58380-683b-11e9-8728-0f9e554a4604.jpg)
+
 •	What users post like me?
 Usecase_6: Find all the user post between 22:00 between 23:00?
- 
+
+![24](https://user-images.githubusercontent.com/47193601/56832909-2aaf4700-683b-11e9-944a-d6226bca6bb5.jpg) 
+
 •	What topics are trending in my domain?
 Usecase_7: Find the most popular resorts’ name based on Instagram likes?
- 
+
+![25](https://user-images.githubusercontent.com/47193601/56832911-2d11a100-683b-11e9-87d8-781b56f3a935.jpg)
+
 •	What keywords/hashtag should I add to my post?
 Usecase_8: Add the most likely hashtag to “Abenaki” into my post caption?
- 
+
+![26](https://user-images.githubusercontent.com/47193601/56832917-2edb6480-683b-11e9-950b-549eb583596b.jpg) 
+
 •	Should I follow somebody back?
 Usercase_9: Find the consumer who has the most Instagram posts likes for one particular ski resort
- 
 
-V. Fuzzy search
+![27](https://user-images.githubusercontent.com/47193601/56834095-7c0d0580-683e-11e9-8462-32761effd586.jpg)
+
+VII. Fuzzy search
+
 1. Synonyms 
 When we extract users’ posts from Instagram, we will also get many synonyms hashtag cause they are included in those posts. Therefore, we use fuzzywuzzy library to classify those hashtags and select the most matching hashtag as the synonymous hashtags
- 
+
+![28](https://user-images.githubusercontent.com/47193601/56832929-33078200-683b-11e9-9560-6ac7bedddc1d.jpg) 
 
 2. Mis-spellings
 When users search a ski resort name, maybe they have a wrong spelling. We need correct them and create a table to update all possible mis-spelling.
+ 
+![29](https://user-images.githubusercontent.com/47193601/56834105-8202e680-683e-11e9-91b1-79054907f0a0.jpg)
  
 
 3. Semantic information
 When users post posts, they maybe have many hashtags, those irrelevant hashtags are Semantic information.
  
+![30](https://user-images.githubusercontent.com/47193601/56834112-85966d80-683e-11e9-9eaa-8ff60745a97e.jpg)
 
-
-VI. Results
+VIII. Results
 We create a database about all ski resort information and then we write code in python to connect our database. Beside we write function to help users to find ideal ski resort. For example, if customers input location they want to go and the ticket price they can afford, they will find all information from our database to recommend some ski resort and customers can choice one of they like.  
 Case1 price and location
+ 
+ ![31](https://user-images.githubusercontent.com/47193601/56834114-87603100-683e-11e9-96a1-99996ef68513.jpg)
  
 Case2: state and altitude
  
 
-VII. Conclusion and Difficulties
+![32](https://user-images.githubusercontent.com/47193601/56834120-8929f480-683e-11e9-9ef9-58965ed3b1c0.jpg) 
+
+IX. Conclusion and Difficulties
 We create a database and python as the bottom of the website we connected to the database. Then we write switch case to call database. Therefore, when user search information, we will call function to extract the information they want.
 
 However, the most difficult thing is that we don’t know how to use Django to create a website. There are have not enough time to learn by ourselves this library. So, it’s clearly what we need to do in future. We need use Django to create a website such as search engine and so on. 
 
-VIII. Citation
+X. Citation
 1. Kaggle: https://www.kaggle.com/beaubellamy/ski-resort
 2. Instagram API: https://instaloader.github.io/index.html
 3.Twitter API: https://developer.twitter.com/en/docs.html
